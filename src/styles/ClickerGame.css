@@ -1,0 +1,68 @@
+.clicker-game {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+  }
+  
+  .clicker-game h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .score {
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    animation: bounce 0.3s ease; /* Bouce effect */
+  }
+  
+  .click-button, .reset-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth hover and click animation */
+  }
+  
+  .click-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .click-button:hover {
+    background-color: #45a049;
+  }
+
+  .click-button:active {
+    transform: scale(0.95); /* Scale down slightly when clicked */
+  }
+  
+  .reset-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .reset-button:hover {
+    background-color: #d32f2f;
+  }
+
+  .reset-button:active {
+    transform: scale(0.95); /* Scale down slightly when clicked */
+  }
+  
+  /* Keyframes for the bounce animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
